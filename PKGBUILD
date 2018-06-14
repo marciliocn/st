@@ -16,21 +16,21 @@ _patches=("https://st.suckless.org/patches/clipboard/st-clipboard-20180309-c5ba9
           "https://st.suckless.org/patches/vertcenter/st-vertcenter-20180320-6ac8c8a.diff"
           "https://st.suckless.org/patches/alpha/st-alpha-20171221-0ac685f.diff"
           "https://st.suckless.org/patches/solarized/st-no_bold_colors-20170623-b331da5.diff"
-          "https://st.suckless.org/patches/solarized/st-solarized-dark-20170623-b331da5.diff")
+          "https://st.suckless.org/patches/solarized/st-solarized-dark-20180411-041912a.diff")
 
 source=("http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz"
         "config.h"
         "${_patches[@]}")
 
 sha256sums=('c4fb0fe2b8d2d3bd5e72763e80a8ae05b7d44dbac8f8e3bb18ef0161c7266926'
-            '6f547cde64c4da598f746e770da5822928ae56ed8e403df03f9d7a01925cde30'
+            '51ed89228ed099192379e3c90f8ff83ebe5bdeb45ae47723ddc5d94de05f0ad0'
             '4989c03de5165234303d3929e3b60d662828972203561651aa6dc6b8f67feeb8'
             '8279d347c70bc9b36f450ba15e1fd9ff62eedf49ce9258c35d7f1cfe38cca226'
             '3fb38940cc3bad3f9cd1e2a0796ebd0e48950a07860ecf8523a5afd0cd1b5a44'
             '04e6a4696293f668260b2f54a7240e379dbfabbc209de07bd5d4d57e9f513360'
             'bc7949dfb3fb4026db4a2659e291f128ae3fbb302ad5cb9b51fb28b1eb3a5433'
             '71e1211189d9e11da93ee49388379c5f8469fcd3e1f48bb4d791ddaf161f5845'
-            '2a0cdd946e420591f39f068753b2f6dab0d076b962512cb850f3ba4492ee7c1b')
+            'b2d5e88a2616eafb82b2fefb63eecb0f9d71f839349ef40f9f69c1953444f88c')
 
 prepare() {
   cd $srcdir/$pkgname-$pkgver
