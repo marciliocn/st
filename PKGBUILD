@@ -14,7 +14,7 @@ _patches=("https://st.suckless.org/patches/clipboard/st-clipboard-20180309-c5ba9
           "https://st.suckless.org/patches/scrollback/st-scrollback-0.8.diff"
           "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-0.8.diff"
           "https://st.suckless.org/patches/vertcenter/st-vertcenter-20180320-6ac8c8a.diff"
-          "https://st.suckless.org/patches/alpha/st-alpha-20171221-0ac685f.diff"
+          "https://st.suckless.org/patches/alpha/st-alpha-0.8.1.diff"
           "https://st.suckless.org/patches/solarized/st-no_bold_colors-20170623-b331da5.diff"
           "https://st.suckless.org/patches/solarized/st-solarized-dark-20180411-041912a.diff")
 
@@ -28,7 +28,7 @@ sha256sums=('c4fb0fe2b8d2d3bd5e72763e80a8ae05b7d44dbac8f8e3bb18ef0161c7266926'
             '8279d347c70bc9b36f450ba15e1fd9ff62eedf49ce9258c35d7f1cfe38cca226'
             '3fb38940cc3bad3f9cd1e2a0796ebd0e48950a07860ecf8523a5afd0cd1b5a44'
             '04e6a4696293f668260b2f54a7240e379dbfabbc209de07bd5d4d57e9f513360'
-            'bc7949dfb3fb4026db4a2659e291f128ae3fbb302ad5cb9b51fb28b1eb3a5433'
+            '7bf61cb8a505891574f3ad0a5420334d3e965b9f7d0067df3819eeef72ce1358'
             '71e1211189d9e11da93ee49388379c5f8469fcd3e1f48bb4d791ddaf161f5845'
             'b2d5e88a2616eafb82b2fefb63eecb0f9d71f839349ef40f9f69c1953444f88c')
 
@@ -38,9 +38,7 @@ prepare() {
   sed -i '/\ttic -sx st.info/d' Makefile
 
   # Modify alpha patch to prevent conflicts
-  sed -i '1,44d' "$srcdir/$(basename ${_patches[4]})" 
   sed -i 's/size_t colornamelen/unsigned int tabspaces/g' "$srcdir/$(basename ${_patches[4]})"
-  sed -i '30,44d' "$srcdir/$(basename ${_patches[4]})" 
   sed -i '1,68d' "$srcdir/$(basename ${_patches[6]})" 
 
   for patch in "${_patches[@]}"; do
