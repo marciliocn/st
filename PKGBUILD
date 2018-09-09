@@ -10,7 +10,7 @@ depends=('libxft' 'libxext' 'xorg-fonts-misc')
 makedepends=('ncurses')
 url="http://st.suckless.org"
 
-_patches=("https://st.suckless.org/patches/clipboard/st-clipboard-20180309-c5ba9c0.diff"
+_patches=("https://st.suckless.org/patches/clipboard/st-clipboard-0.8.1.diff"
           "https://st.suckless.org/patches/scrollback/st-scrollback-0.8.diff"
           "https://st.suckless.org/patches/scrollback/st-scrollback-mouse-0.8.diff"
           "https://st.suckless.org/patches/vertcenter/st-vertcenter-20180320-6ac8c8a.diff"
@@ -24,7 +24,7 @@ source=("http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz"
 
 sha256sums=('c4fb0fe2b8d2d3bd5e72763e80a8ae05b7d44dbac8f8e3bb18ef0161c7266926'
             '51ed89228ed099192379e3c90f8ff83ebe5bdeb45ae47723ddc5d94de05f0ad0'
-            '4989c03de5165234303d3929e3b60d662828972203561651aa6dc6b8f67feeb8'
+            'f22e0165aacb2bc86d000728c81f68022abcc601dbfd09e516e1ba772225d7e6'
             '8279d347c70bc9b36f450ba15e1fd9ff62eedf49ce9258c35d7f1cfe38cca226'
             '3fb38940cc3bad3f9cd1e2a0796ebd0e48950a07860ecf8523a5afd0cd1b5a44'
             '04e6a4696293f668260b2f54a7240e379dbfabbc209de07bd5d4d57e9f513360'
