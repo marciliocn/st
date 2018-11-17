@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "SauceCodePro Nerd Font Mono:style=Regular:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -80,10 +80,10 @@ char *termname = "xterm-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
-unsigned int alpha = 0xaa;
+unsigned int alpha = 0xcc;
 
 /* alpha */
 #define OPAQUE 0Xff
@@ -133,8 +133,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 100;
+static unsigned int rows = 30;
 
 /*
  * Default colour and shape of the mouse cursor
@@ -476,4 +476,3 @@ static char ascii_printable[] =
 int disablebold = 0;
 int disableitalic = 0;
 int disableroman = 0;
-
