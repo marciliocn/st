@@ -1,4 +1,4 @@
-Font default 
+TO DO
 ------------
 
-* Try install in another Arch Linux to verify no font dependency (Sauce);
+* Waiting a new crazy behavior from system;
