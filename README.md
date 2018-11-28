@@ -23,6 +23,10 @@
 makepkg -si
 ```
 
+## Tip
+
+I added a shortcut in Arch Linux KDE (META+t) passing through a parameter `st -f 'xos4 Terminus-12'`. This way a choose any font for my terminal :)
+
 ## Further Notes
 
 + Change the transparency value by modifying the `alpha` variable in [config.h](https://github.com/marciliocn/st/blob/master/config.h).
